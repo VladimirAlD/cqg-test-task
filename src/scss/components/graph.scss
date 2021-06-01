@@ -1,0 +1,9 @@
+.graph {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  &__legend {
+    width: 100%;
+    max-width: 300px;
+  }
+}

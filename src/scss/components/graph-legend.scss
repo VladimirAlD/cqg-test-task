@@ -1,0 +1,18 @@
+.legend {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  &__item {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 100%;
+  }
+  &__tag {
+    margin-left: 5px;
+    padding: 0 4px;
+    border: 2px solid blue;
+    border-radius: 1000px;
+  }
+}

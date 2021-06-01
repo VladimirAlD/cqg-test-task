@@ -1,0 +1,62 @@
+.link {
+  position: relative;
+  display: inline-block;
+  color: $dark-color;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: $dark-color;
+    z-index: -1;
+  }
+
+  // anim initial
+  &::before,
+  &::after {
+    opacity: 0;
+    transition: all .6s linear;
+  }
+  
+  &::before {
+    left: 50%;
+  }
+  
+  &::after {
+    right: 50%;
+  }
+  
+  // anim finish
+  $disp: -0.5rem;
+
+  &:hover {
+
+    &::before,
+    &::after {
+      opacity: 1;
+    }
+
+    &::before {
+      left: $disp;
+    }
+
+    &::after {
+      right: $disp;
+    }
+  }
+
+  &:active {
+    color: #fff;
+
+    &::before,
+    &::after {
+      width: 100%;
+    }
+  }
+
+}

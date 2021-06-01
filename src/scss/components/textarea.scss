@@ -1,0 +1,18 @@
+.textarea {
+  width: 100%;
+  min-height: 180px;
+  border-color: $dark-color;
+  font-size: 1rem;
+  resize: vertical;
+  overflow: auto;
+
+  @include media($tabletWidth) {
+    min-height: 400px;
+  }
+
+  // h/f/a/tr
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px $dark-color;
+  }
+}

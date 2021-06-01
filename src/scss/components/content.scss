@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  @include media($tabletWidth) {
+    flex-direction: row;
+    &__repoform {
+      width: 50%;
+    }
+    &__view-area {
+      width: 50%;
+    }
+  }
+}

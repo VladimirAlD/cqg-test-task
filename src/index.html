@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= title %></title>
+</head>
+
+<body class="site-body">
+  <header class="site-header">
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar__wrapper">
+          <div class="navbar__item navbar__item_grow-1">
+            <a class="link" href="https://vladimirald.github.io/">by webdva.</a>
+          </div>
+          <div class="navbar__item navbar__item_grow-1">folio</div>
+          <div class="navbar__item navbar__item_grow-2 navbar__item_ta-r">2021</div>
+        </div>
+        <div class="hr"></div>
+      </div>
+    </div>
+    <div class="headline">
+      <div class="container">
+        <h1 class="headline__title">Тестовое задание<br>на позицию Junior Front-end Developer<br>компании <a class='link'
+            href="https://www.cqg.com/">CQG.</a><span class="headline__subtitle">Реализация отображения графа репозитория</span></h1>
+      </div>
+    </div>
+  </header>
+  <main class="site-body__site-main site-main">
+    <div class="container">
+      <div class="content">
+        <form class="content__repoform repoform">
+          <textarea class="repoform__textarea textarea js__textarea">
+{
+"commits": [{
+  "hash": "1",
+  "text": "initial commit",
+    "time": "2021-01-01T15:45:07Z",
+    "previous": []
+  },
+  {
+    "hash": "2",
+    "text": "commit 2",
+    "time": "2021-01-02T23:59:00Z",
+    "previous": ["1asdf"]
+  },
+  {
+    "hash": "3",
+    "text": "commit 3",
+    "time": "2021-02-05T11:11:11Z",
+    "previous": ["2"]
+  },
+  {
+    "hash": "4",
+    "text": "commit 4",
+    "time": "2021-02-06T11:11:11Z",
+    "previous": ["2"]
+  },
+  {
+    "hash": "5",
+    "text": "commit 5",
+    "time": "2021-02-07T11:11:11Z",
+    "previous": ["3"]
+  } ,   {
+    "hash": "6",
+    "text": "commit 6",
+    "time": "2021-02-08T11:11:11Z",
+    "previous": ["3", "4"]
+  },
+  {
+    "hash": "7",
+    "text": "commit 7",
+    "time": "2021-02-09T11:11:11Z",
+    "previous": ["6"]
+  },
+  {
+    "hash": "8",
+    "text": "commit 8",
+    "time": "2021-02-10T11:11:11Z",
+    "previous": ["5", "7"]
+  }],
+"tags": [{
+    "commit": "3",
+    "tag": ["branch/a", "ini"]
+  },
+  {
+    "commit": "4",
+    "tag": "rel/1x0"
+  }]
+}
+        </textarea>
+          <button class="repoform__btn btn js__btn" type="submit">Построить</button>
+        </form>
+        <div class="content__view-area view-area">
+          <h2 class="view-area__title">Граф репозитория</h2>
+          <div class="view-area__graph graph">
+            <div class="graph__frame js__frame"></div>
+            <div class="graph__legend">
+              <ul class="legend js__legend">
+              </ul>
+            </div>
+          </div>
+          <div class="view-area__commit-info js__info">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="hr"></div>
+      <div class="navbar">
+        <div class="navbar__wrapper">
+          <div class="navbar__item">created
+            <a class="link" href="https://vladimirald.github.io/">by webdva.</a>
+          </div>
+          <div class="navbar__item">52.8075, 52.3885</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

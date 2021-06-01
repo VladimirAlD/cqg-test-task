@@ -1,0 +1,16 @@
+.headline {
+  text-align: center;
+
+  &__title {
+    font-size: 1.5rem;
+
+    @include media($smTabletWidth) {
+      font-size: 2rem;
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    margin-top: 16px;
+  }
+}

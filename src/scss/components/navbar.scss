@@ -1,0 +1,19 @@
+.navbar {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+
+  &__item {
+    &_grow-1 {
+      flex-grow: 1;
+    }
+    &_grow-2 {
+      flex-grow: 2;
+    }
+    &_ta-r {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.view-area {
+  padding: 0 15px;
+  &__title {
+    text-align: center;
+    @include media($tabletWidth) {
+      display: none;
+    }
+  }
+}
